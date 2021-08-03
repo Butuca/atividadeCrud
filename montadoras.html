@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta charset = "UTF-8">
+    <title>multimarcas veiculos</title>
+</head>
+<body>
+    <form name ="frm_veiculos" method="POST">
+    <hr><center> Multimarcas Veiculos - ADSVA4 - Nome do aluno: Lucas Santana Saturnino</center><hr><br>
+
+    <fieldset>
+        <legend>Dados do veiculo</legend>
+        Renavam: <br>
+        <input type ="text" name="txt_renavam" size="10" maxlength="40" ><br>
+        Descricao do veiculo: <br>
+        <input type ="text" name="txt_descricao" size="10" maxlength="40" ><br>
+        Ano de fabricacao: <br>
+        <input type ="text" name="txt_ano_fab" size="10" maxlength="40" ><br>
+        Montadora: <br>
+        <select name="txt_montadora">
+            <option value = "Jeep">Jeep</option>
+            <option value = "Ford">Ford</option>
+            <option value = "Fiat">Fiat</option>
+            <option value = "Tesla">Tesla</option>
+            <option value = "Audi">Audi</option>
+            <option value = "Gurgel">Gurgel</option>
+        </select> <br>
+        Placa: <br>
+        <input type ="text" name="txt_placa" size="10" maxlength="40" ><br>
+        Valor do veiculo: <br>
+        <input type ="text" name="txt_valor" size="10" maxlength="40" ><br>
+    </fieldset>
+    <center>
+        <input type="submit" name="btn_cadastrar" value="Cadastrar" onclick="document.frm_veiculos.action='gravar.php'">
+        <input type="submit" name="btn_listagem"value="listagem" onclick="document.frm_veiculos.action='listagem.php'"><br>
+    </center>
+    </form>
+</body>
+</html>
